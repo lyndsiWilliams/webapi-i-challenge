@@ -44,8 +44,8 @@ server.get('/users', (req, res) => {
   }).catch(err => {
     console.log(err)
     res.status(500).json({ error: "Could not retrieve the user data." })
-  })
-})
+  });
+});
 
 // once the server is fully configured we can have it "listen" for connections on a particular "port"
 // the callback function passed as the second argument will run once the server starts
